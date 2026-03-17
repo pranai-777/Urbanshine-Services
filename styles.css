@@ -282,3 +282,145 @@ background:#144ed6;
 transform:scale(1.1);
 }
 
+/* ========================= */
+/* RESPONSIVE FIXES */
+/* ========================= */
+
+/* Prevent horizontal scroll */
+body{
+overflow-x:hidden;
+}
+
+/* Images responsive */
+img{
+max-width:100%;
+height:auto;
+}
+
+/* Header responsive */
+header{
+flex-wrap:wrap;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* HERO FIX */
+.hero{
+height:auto;
+padding:80px 20px;
+background-position:center;
+}
+
+.hero-box{
+max-width:100%;
+}
+
+/* ABOUT FIX */
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+/* GRID FIX */
+.services,
+.why-container{
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+
+/* FORM FIX */
+.dynamic-form,
+.contact-form{
+width:90%;
+max-width:500px;
+margin:auto;
+}
+
+/* EMAIL BUTTON MOBILE */
+.email-btn{
+width:50px;
+height:50px;
+bottom:15px;
+right:15px;
+}
+
+/* ========================= */
+/* MOBILE VIEW */
+/* ========================= */
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+padding:15px 20px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h1{
+font-size:24px;
+}
+
+.section{
+padding:50px 20px;
+}
+
+.title{
+font-size:24px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.services{
+grid-template-columns:1fr;
+}
+
+.why-container{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ========================= */
+/* PROFESSIONAL NAVBAR */
+/* ========================= */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* Mobile Navbar */
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+align-items:center;
+gap:20px;
+padding:20px 0;
+display:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+nav.active{
+display:flex;
+}
+
+}
