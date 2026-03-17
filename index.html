@@ -200,23 +200,18 @@ We focus on professionalism, punctuality, and customer satisfaction in every ser
 
 <form action="https://formspree.io/f/mlgpovdv" method="POST">
 
-<input type="text" placeholder="Full Name" required>
+<input type="text" name="name" placeholder="Full Name" required>
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address" required>
 
-<input type="tel" placeholder="Phone Number">
-
-<select>
-<option>Preferred Job</option>
+<select name="job_type">
 <option>Office Cleaning</option>
 <option>Hotel Cleaning</option>
-<option>Apartment Cleaning</option>
-<option>Others</option>
 </select>
 
-<textarea placeholder="Tell us about yourself"></textarea>
+<textarea name="message" placeholder="About yourself"></textarea>
 
-<button type="submit">Apply for Job</button>
+<button type="submit">Apply</button>
 
 </form>
 
@@ -230,24 +225,18 @@ We focus on professionalism, punctuality, and customer satisfaction in every ser
 
 <form action="https://formspree.io/f/mlgpovdv" method="POST">
 
-<input type="text" placeholder="Company Name" required>
+<input type="text" name="company" placeholder="Company Name" required>
 
-<input type="email" placeholder="Company Email" required>
+<input type="email" name="email" placeholder="Email Address" required>
 
-<input type="tel" placeholder="Phone Number">
-
-<select>
-<option>Select Service</option>
+<select name="service">
 <option>Office Cleaning</option>
 <option>Hotel Cleaning</option>
-<option>Apartment Cleaning</option>
-<option>Building Cleaning</option>
-<option>Others</option>
 </select>
 
-<textarea placeholder="Describe your cleaning needs"></textarea>
+<textarea name="message" placeholder="Requirement"></textarea>
 
-<button type="submit">Request Contract</button>
+<button type="submit">Request</button>
 
 </form>
 
@@ -259,15 +248,15 @@ We focus on professionalism, punctuality, and customer satisfaction in every ser
 
 <h2 class="title">Contact Us</h2>
 
-<form action="https://formspree.io/f/mlgpovdv" class="contact-form">
+<form action="https://formspree.io/f/mlgpovdv" method="POST">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address" required>
 
-<input type="tel" placeholder="Phone Number">
+<input type="tel" name="phone" placeholder="Phone Number">
 
-<textarea rows="5" placeholder="Your Message"></textarea>
+<textarea name="message" placeholder="Your Message"></textarea>
 
 <button type="submit">Send Message</button>
 
