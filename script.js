@@ -17,3 +17,17 @@ companyForm.style.display = "block";
 }
 
 }
+
+// NAVBAR TOGGLE
+
+function toggleMenu(){
+const nav = document.getElementById("navMenu");
+nav.classList.toggle("active");
+}
+
+// CLOSE MENU AFTER CLICK (MOBILE)
+
+function closeMenu(){
+const nav = document.getElementById("navMenu");
+nav.classList.remove("active");
+}
