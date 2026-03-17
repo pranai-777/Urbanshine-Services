@@ -27,29 +27,20 @@ d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1
 
 <header>
 
+
 <div class="logo">
-
-<svg viewBox="0 0 120 120">
-<circle cx="60" cy="60" r="50" fill="#1f6feb"/>
-<path d="M35 65 L55 85 L90 40"
-stroke="white"
-stroke-width="10"
-fill="none"
-stroke-linecap="round"
-stroke-linejoin="round"/>
-</svg>
-
-<span>Urbanshine Services</span>
-
+✔ Urbanshine Services
 </div>
 
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#why">Why Us</a>
-<a href="#contact">Contact</a>
+<nav id="navMenu">
+
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#services" onclick="closeMenu()">Services</a>
+<a href="#why" onclick="closeMenu()">Why Us</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
 
 </nav>
 
